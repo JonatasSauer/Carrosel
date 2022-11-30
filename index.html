@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.2/vanilla-tilt.js"></script>
+    <title>carrosel</title>
+</head>
+<body>
+        <header>
+          <div class="title-primary">
+             <h1>Fotos em carrosel</h1>
+          </div>
+       </header>
+
+        <div class="container">
+   
+          <div class="imagens">
+            <input type="radio" name="radio" id="imagem1">
+            <input type="radio" name="radio" id="imagem2">
+            <input type="radio" name="radio" id="imagem3">
+            <input type="radio" name="radio" id="imagem4">
+            <input type="radio" name="radio" id="imagem5">
+            <input type="radio" name="radio" id="imagem6">
+       
+            <div class="imagem img1">
+              <img src="img/5.gif" alt="">
+            </div>
+
+            <div class="imagem img2">
+              <img src="img/2.gif" alt="">
+            </div>
+
+            <div class="imagem img3">
+              <img src="img/4.gif" alt="">
+            </div>
+
+            <div class="imagem img4">
+              <img src="img/3.gif" alt="">
+            </div>
+
+            <div class="imagem img5">
+              <img src="img/seila123.gif" alt="">
+            </div>
+
+            <div class="imagem img6">
+              <img src="img/seila124.gif" alt="">
+            </div>
+            
+        </div> 
+
+          <div class="navegacao">
+            <label for="imagem1" class="bar" id="selector1"></label>
+            <label for="imagem2" class="bar" id="selector2"></label>
+            <label for="imagem3" class="bar" id="selector3"></label>
+            <label for="imagem4" class="bar" id="selector4"></label>
+            <label for="imagem5" class="bar" id="selector5"></label>
+            <label for="imagem6" class="bar" id="selector6"></label>
+          </div>
+    </div>
+
+     <div class="mark-container">
+        <div class="flex-mark">
+          <div class="mark"></div>
+        </div>
+     </div>
+
+     <script type="text/javascript">
+      VanillaTilt.init(document.querySelectorAll("body"),{
+          scale: 1.05, //escala
+          reverse: true, //direção
+          glare: false, //brilho
+          "maxglare": 0.5, //opacidade
+      });
+  </script>
+</body>
+</html>
