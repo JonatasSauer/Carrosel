@@ -1,0 +1,160 @@
+@charset "UTF-8";
+
+@keyframes is-left{
+    to{
+        position: relative;
+        margin-left: 90%;
+        box-shadow: -2px 2px 5px #000;
+    }
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(#ddd,#888) ;
+}
+
+header{
+    padding-top: 50px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #ddd;
+    text-shadow: 1px 1px 3px #000;
+    display: flex;
+    justify-content: center;
+}
+
+.title-primary{
+    
+    width:450px;
+    background-color: #aaa;
+    border-radius: 30px;
+    box-shadow: 1px 1px 3px #000;
+}
+
+/* -----FORMATAÇÃO DO CONTAINER----- */
+
+.container{
+    border-radius: 10px;
+    width: 1000px;
+    height: 560px;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%); /*O eixo do container vai para o centro*/
+    box-shadow: 1px 1px 5px #000;
+    border: solid 10px #ddd;
+}
+
+.navegacao{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform:translate(-50%);
+    display: flex ;
+    
+}
+
+/* -----FORMATAÇÃO DA NAVEGAÇÃO----- */
+
+.bar{
+    background-color: azure;
+    box-shadow: 1px 1px 5px #000;
+    width:30px;
+    height: 7px;
+    margin: 6px;
+    transition: .5s;
+    padding: 10px 20px;
+}
+
+.bar:hover{
+    background-color: #555;
+    rotate: 1turn;
+
+}
+
+input{
+    display: none;
+}
+
+.imagens{
+    display: flex;
+    width: 600%;
+    height:100%;
+}
+
+.imagem{
+    width: 16.66666666667%;
+    transition: .3s;
+}
+
+.imagem img{
+    width:100%;
+    height: 100%;
+}
+
+/* ----TRANSIÇÃO DAS IMAGEMS----- */
+
+#imagem1:checked ~ .img1{
+    margin-left: 0;
+ 
+
+}
+
+#imagem2:checked ~ .img1{
+    margin-left: -16.66666666667%;
+
+}
+
+#imagem3:checked ~ .img1{
+    margin-left: -33.3333333337% ; 
+
+}
+
+#imagem4:checked ~ .img1{
+    margin-left: -50.0000000004%; 
+}
+
+#imagem5:checked ~ .img1{
+    margin-left: -66.6666666671%; 
+}
+
+#imagem6:checked ~ .img1{
+    margin-left: -83.3333333338%; 
+}
+
+/*  */
+
+.mark-container{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 86%;
+    bottom: 0;
+    width: 100%;
+
+}
+
+.flex-mark{
+    width:900px;
+    height: 40px;
+  
+}
+
+.mark{
+    animation: is-left 3s alternate-reverse infinite;
+    width: 10%;
+    height: 50%;
+    background-color: #ddd;
+    border-radius: 20px;
+    box-shadow: 1px 1px 1px #000;
+}
+
